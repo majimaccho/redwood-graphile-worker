@@ -1,6 +1,7 @@
 import type { QueryResolvers, MutationResolvers } from 'types/graphql'
 
 import { db } from 'src/lib/db'
+import { createJob } from 'src/lib/job'
 
 export const uploadedImages: QueryResolvers['uploadedImages'] = () => {
   return db.uploadedImage.findMany()
@@ -15,6 +16,13 @@ export const uploadedImage: QueryResolvers['uploadedImage'] = ({ id }) => {
 export const createUploadedImage: MutationResolvers['createUploadedImage'] = ({
   input,
 }) => {
+  createJob({
+    name: 'createThumbnail',
+    payload: {
+      path: input.path,
+    },
+  })
+
   return db.uploadedImage.create({
     data: input,
   })

@@ -32,3 +32,7 @@ lint:
 
 lintExclude:
   - _prisma_migrations
+  - graphile_worker.migrations
+  - graphile_worker.job_queues
+  - graphile_worker.jobs
+  - graphile_worker.known_crontabs
