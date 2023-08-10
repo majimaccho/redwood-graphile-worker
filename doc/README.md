@@ -5,7 +5,7 @@
 | 名前 | カラム一覧 | コメント | タイプ |
 | ---- | ------- | ------- | ---- |
 | [public._prisma_migrations](public._prisma_migrations.md) | 8 |  | BASE TABLE |
-| [public.UploadedImage](public.UploadedImage.md) | 3 |  | BASE TABLE |
+| [public.UploadedImage](public.UploadedImage.md) | 3 | Image uploaded to S3 | BASE TABLE |
 | [graphile_worker.migrations](graphile_worker.migrations.md) | 2 |  | BASE TABLE |
 | [graphile_worker.job_queues](graphile_worker.job_queues.md) | 4 |  | BASE TABLE |
 | [graphile_worker.jobs](graphile_worker.jobs.md) | 16 |  | BASE TABLE |

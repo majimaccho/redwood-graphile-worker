@@ -2,12 +2,14 @@
 
 ## 概要
 
+Image uploaded to S3
+
 ## カラム一覧
 
 | 名前 | タイプ | デフォルト値 | Nullable | 子テーブル | 親テーブル | コメント |
 | ---- | ------ | ------------ | -------- | ---------- | ---------- | -------- |
 | id | text |  | false |  |  |  |
-| path | text |  | false |  |  |  |
+| path | text |  | false |  |  | S3 path to image |
 | createdAt | timestamp(3) without time zone | CURRENT_TIMESTAMP | false |  |  |  |
 
 ## 制約一覧
