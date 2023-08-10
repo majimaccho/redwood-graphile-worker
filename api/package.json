@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@redwoodjs/api": "6.0.5",
-    "@redwoodjs/graphql-server": "6.0.5"
+    "@redwoodjs/graphql-server": "6.0.5",
+    "graphile-worker": "^0.13.0"
   }
 }

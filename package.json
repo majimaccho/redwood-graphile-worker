@@ -9,6 +9,26 @@
   "devDependencies": {
     "@redwoodjs/core": "6.0.5"
   },
+  "scripts": {
+    "db:seed": "yarn prisma db seed",
+    "db:migrate": "yarn prisma migrate dev && yarn gen:doc",
+    "db:migrate:empty": "yarn prisma migrate dev --create-only",
+    "db:reset": "yarn prisma migrate reset && yarn gen:doc",
+    "db:lint": "yarn tbls lint",
+    "dev": "yarn rw dev",
+    "deploy": "./bin/app/create_deploy_pr.sh fs1",
+    "deploy:delete": "./bin/app/delete_deploy_pr.sh fs1",
+    "g": "yarn rw generate",
+    "gen:graphql": "yarn workspaces foreach -p run graphql-codegen",
+    "tbls": "DATABASE_URL=postgres://postgres:postgres@localhost:5000/app tbls",
+    "gen:doc": "yarn tbls doc --force",
+    "postinstall": "sh postinstall.sh",
+    "prisma": "yarn rw prisma",
+    "storybook": "yarn rw storybook",
+    "tdd": "yarn test --db-push false",
+    "test": "yarn rw test --setupFiles ./testconfig.js",
+    "tsc": "yarn rw type-check"
+  },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
     "root": true
