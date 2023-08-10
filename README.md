@@ -3,7 +3,9 @@
 ## What is this?
 This is an PoC project to set up async job with [Graphile Worker](https://github.com/graphile/worker)
 
-https://community.redwoodjs.com/t/how-do-i-run-background-or-cron-jobs/2971/11
+Ref: 
+- https://ryanchenkie.com/blog/how-to-use-queues-with-redwoodjs
+- https://community.redwoodjs.com/t/how-do-i-run-background-or-cron-jobs/2971/11
 
 
 ## How to run
