@@ -2,7 +2,7 @@
 dsn: ${DATABASE_URL}?sslmode=disable
 
 # Path to generate document
-docPath: doc
+docPath: doc/db
 dict:
   Tables: テーブル一覧
   Description: 概要
